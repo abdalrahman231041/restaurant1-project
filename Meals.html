@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>قائمة الطعام</title>
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+    <header>
+        <h1>قائمة الطعام</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">الرئيسية</a></li>
+                <li><a href="AboutUs.html">عن المطعم</a></li>
+                <li><a href="Meals.html">قائمة الطعام</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table id="menu-table" border="1">
+            <tr><th>الرمز</th><th>الوجبة</th><th>السعر</th><th>إظهار التفاصيل</th><th>اختيار</th></tr>
+            <tr><td>SF-001</td><td>سمك بوري مشوي</td><td>110,000</td><td><input type="checkbox" class="toggle-details" data-target="d1"> عرض</td><td><input type="checkbox" class="select-item" data-name="سمك بوري" data-price="110000"></td></tr>
+            <tr id="d1" style="display:none;"><td colspan="5">
+    <strong>مطبخ مصري</strong><br>
+    <strong>المكونات:</strong> سمك، زيت، ليمون، بهارات<br>
+    <strong>طريقة التقديم:</strong> يقدم مع أرز وسلطة خضراء<br>
+    <img src="images/fish.jfif" alt="سمك" width="150">
+</td></tr>
+            <tr><td>SF-002</td><td>كبة لبنية</td><td>85,000</td><td><input type="checkbox" class="toggle-details" data-target="d2"> عرض</td><td><input type="checkbox" class="select-item" data-name="كبة" data-price="85000"></td></tr>
+            <tr id="d2" class="details-row" style="display:none;">
+    <td colspan="5">
+        <strong>المطبخ:</strong> شامي<br>
+        <strong>تصنيف الطعام:</strong> مأكولات شامية<br>
+        <strong>المكونات:</strong><br>
+        • 500 غرام لحم مفروم ناعم<br>
+        • 2 كوب برغل ناعم منقوع ومصفى<br>
+        • بصلة متوسطة مفرومة ناعم<br>
+        • ملعقة صغيرة ملح وفلفل أسود<br>
+        • 3 أكواب لبن مطبوخ<br>
+        • 2 ملعقة كبيرة صنوبر مقلي<br>
+        <strong>طريقة التقديم:</strong> تقدم الكبة مقلية مع اللبن المطبوخ والصنوبر<br>
+        <br>
+        <img src="images/kebab.jfif" alt="كبة لبنية" width="200">
+    </td>
+</tr>
+            <tr><td>SF-003</td><td>بيتزا</td><td>95,000</td><td><input type="checkbox" class="toggle-details" data-target="d3"> عرض</td><td><input type="checkbox" class="select-item" data-name="بيتزا" data-price="95000"></td></tr>
+            <tr id="d3" class="details-row" style="display:none;">
+    <td colspan="5">
+        <strong>المطبخ:</strong> إيطالي<br>
+        <strong>تصنيف الطعام:</strong> معجنات<br>
+        <strong>المكونات:</strong><br>
+        • عجينة بيتزا طازجة<br>
+        • صلصة طماطم إيطالية<br>
+        • 200 غرام جبنة موزاريلا طازجة<br>
+        • أوراق ريحان طازج<br>
+        • 2 ملعقة كبيرة زيت زيتون بكر<br>
+        • رشة ملح وفلفل أسود<br>
+        <strong>طريقة التحضير:</strong> تخبز في فرن حجري على درجة حرارة 400 مئوية<br>
+        <br>
+        <img src="images/pizza.jfif" alt="بيتزا مارجريتا" width="200">
+    </td>
+</tr>
+            <tr><td>SF-004</td><td>شيش طاووق</td><td>120,000</td><td><input type="checkbox" class="toggle-details" data-target="d4"> عرض</td><td><input type="checkbox" class="select-item" data-name="شيش طاووق" data-price="120000"></td></tr>
+            <tr id="d4" class="details-row" style="display:none;">
+    <td colspan="5">
+        <strong>المطبخ:</strong> لبناني<br>
+        <strong>تصنيف الطعام:</strong> مشاوي<br>
+        <strong>المكونات:</strong><br>
+        • 500 غرام صدر دجاج مقطع مكعبات<br>
+        • 4 فصوص ثوم مهروس<br>
+        • نصف كوب لبن زبادي<br>
+        • 2 ملعقة كبيرة زيت زيتون<br>
+        • عصير ليمونة<br>
+        • بهارات مشكلة (كمون، كزبرة، فلفل أحمر)<br>
+        <strong>طريقة التقديم:</strong> يقدم مع أرز وخبز مشروح وسلطة<br>
+        <br>
+        <img src="images/shish.jfif" alt="شيش طاووق" width="200">
+    </td>
+</tr>
+            <tr><td>SF-005</td><td>سلطة سيزر</td><td>65,000</td><td><input type="checkbox" class="toggle-details" data-target="d5"> عرض</td><td><input type="checkbox" class="select-item" data-name="سلطة" data-price="65000"></td></tr>
+            <tr id="d5" class="details-row" style="display:none;">
+    <td colspan="5">
+        <strong>المطبخ:</strong> أمريكي<br>
+        <strong>تصنيف الطعام:</strong> سلطات<br>
+        <strong>المكونات:</strong><br>
+        • رأس خس روماني طازج<br>
+        • صدر دجاج مشوي ومقطع شرائح<br>
+        • خبز محمص (كروتون)<br>
+        • جبنة بارميزان مبشورة<br>
+        • صوص سيزر الكلاسيكي<br>
+        <strong>مكونات الصوص:</strong><br>
+        • مايونيز، ثوم مهروس، عصير ليمون، زيت زيتون<br>
+        • جبنة بارميزان، خردل، فلفل أسود<br>
+        <br>
+        <img src="images/salad.jfif" alt="سلطة سيزر" width="200">
+    </td>
+</tr>
+        </table>
+        <button id="checkout-btn">متابعة</button>
+        <div id="order-form-container" style="display:none;">
+            <h2>إتمام الطلب</h2>
+            <form id="order-form">
+                الاسم (إنجليزي): <input type="text" id="fullname"> <span id="name-error"></span><br>
+                رقم الحساب (6 أرقام): <input type="text" id="bank-account"> <span id="account-error"></span><br>
+                تاريخ الطلب: <input type="date" id="order-date"> <span id="date-error"></span><br>
+                رقم الموبايل (09xxxxxxxx): <input type="text" id="mobile"> <span id="mobile-error"></span><br>
+                <div id="selected-items-summary"></div>
+                <p>الإجمالي: <span id="total-price">0</span></p>
+                <button type="submit">إرسال</button>
+            </form>
+            <div id="success-message" style="display:none; color:green;"></div>
+        </div>
+    </main>
+    <script src="js/myFunctions.js"></script>
+</body>
+</html>
